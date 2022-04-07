@@ -12,7 +12,7 @@ FluxLib.Name = "FluxLib"
 FluxLib.Parent = game.CoreGui
 FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-coroutine.wrap(
+spawn(
 	function()
 		while task.wait() do
 			local t = 10;
@@ -28,7 +28,7 @@ coroutine.wrap(
 			end
 		end
 	end
-)()
+)
 
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
