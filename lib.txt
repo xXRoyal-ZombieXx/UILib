@@ -15,8 +15,9 @@ FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 coroutine.wrap(
 	function()
 		while task.wait() do
+			local t = 10;
 			Flux.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
-			Flux.HueSelectionPosition = Flux.HueSelectionPosition + 1
+			Flux.HueSelectionPosition = tick() % t/t
 
 			if Flux.RainbowColorValue >= 1 then
 				Flux.RainbowColorValue = 0
