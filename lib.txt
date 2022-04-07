@@ -2207,7 +2207,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 						ToggleCircle:TweenPosition(UDim2.new(0.37, 0,-0.273, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
 							ToggleCircle,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+							TweenInfo.new(.001, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{BackgroundColor3 =PresetColor}
 						):Play()
 
@@ -2230,7 +2230,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 						ToggleCircle:TweenPosition(UDim2.new(0, 0,-0.273, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Quart, .3, true)
 						TweenService:Create(
 							ToggleCircle,
-							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+							TweenInfo.new(.001, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 							{BackgroundColor3 = Color3.fromRGB(255,255,255)}
 						):Play()
 
