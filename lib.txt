@@ -1132,7 +1132,7 @@ function Library:tab(options)
 
 		tabButton.MouseLeave:connect(function()
 			hovered = false
-			tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or 1}
+			tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or .5}
 		end)
 
 		tabButton.MouseButton1Down:connect(function()
