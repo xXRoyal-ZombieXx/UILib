@@ -1143,7 +1143,7 @@ function Library:tab(options)
 		UserInputService.InputEnded:connect(function(key)
 			if key.UserInputType == Enum.UserInputType.MouseButton1 then
 				down = false
-				tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or (hovered and 0.3) or 1}
+				tabButton:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or (hovered and 0.3) or .5}
 			end
 
 		end)
@@ -1154,7 +1154,7 @@ function Library:tab(options)
 				local button = tabInfo[2]
 				page.Visible = false
 			end
-			selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or 1}
+			selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or .5}
 			selectedTab = tabButton
 			tab.Visible = true
 			tabButton.BackgroundTransparency = 0
@@ -1181,7 +1181,7 @@ function Library:tab(options)
 					local button = tabInfo[2]
 					page.Visible = false
 				end
-				selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or 1}
+				selectedTab:tween{BackgroundTransparency = ((selectedTab == tabButton) and 0.15) or .5}
 				selectedTab = tabButton
 				tab.Visible = true
 				tabButton.BackgroundTransparency = 0
