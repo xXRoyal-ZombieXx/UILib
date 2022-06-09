@@ -1112,7 +1112,7 @@ function Library:tab(options)
 	})
 
 	local tabButton = Library:object("TextButton", {
-		BackgroundTransparency = 1,
+		BackgroundTransparency = .5,
 		Parent = self.nilFolder.AbsoluteObject,
 		Theme = {BackgroundColor3 = "Secondary"},
 		Size = UDim2.new(0, 125, 0, 25),
