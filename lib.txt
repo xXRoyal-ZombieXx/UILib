@@ -472,7 +472,7 @@ function Library:create(options)
 		VerticalAlignment = Enum.VerticalAlignment.Bottom
 	})
 
-	local core = gui:object("Frame", {
+	local core = gui:object("ImageLabel", {
 		Size = UDim2.new(),
 		Theme = {BackgroundColor3 = "Main"},
 		Centered = true,
