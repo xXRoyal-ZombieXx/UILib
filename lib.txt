@@ -1076,7 +1076,7 @@ function Library:tab(options)
 	local tab = self.container:object("ScrollingFrame", {
 		AnchorPoint = Vector2.new(0, 1),
 		Visible = false,
-		BackgroundTransparency = 1,
+		BackgroundTransparency = .5,
 		Position = UDim2.fromScale(0, 1),
 		Size = UDim2.fromScale(1, 1),
 		ScrollBarThickness = 0,
